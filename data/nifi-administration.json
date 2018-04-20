@@ -1,0 +1,19 @@
+{
+  "nifi-administration" : [
+    "nifi-user-actions",
+    "nifi-api",
+    "nifi-framework-core-api",
+    "nifi-nar-utils",
+    "nifi-utils",
+    "nifi-properties",
+    "nifi-security-utils",
+    "h2",
+    "spring-beans",
+    "spring-context",
+    "spring-core",
+    "spring-aop",
+    "aspectjweaver",
+    "spring-security-core",
+    "commons-collections4"
+  ]
+}
