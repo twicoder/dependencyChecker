@@ -1,0 +1,27 @@
+{
+  "nifi-framework-core":[
+    "nifi-framework-core-api",
+    "nifi-api",
+    "nifi-expression-language",
+    "nifi-utils",
+    "nifi-properties",
+    "nifi-site-to-site",
+    "logback-classic",
+    "nifi-framework-cluster-protocol",
+    "nifi-logging-utils",
+    "nifi-client-dto",
+    "quartz",
+    "h2",
+    "jasypt",
+    "bcprov-jdk16",
+    "jersey-client",
+    "nifi-security",
+    "spring-core",
+    "spring-beans",
+    "spring-context",
+    "commons-io",
+    "nifi-data-provenance-utils",
+    "nifi-write-ahead-log",
+    "nifi-mock"
+  ]
+}

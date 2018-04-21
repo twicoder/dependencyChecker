@@ -1,0 +1,15 @@
+{
+  "nifi-site-to-site":[
+    "nifi-security",
+    "nifi-administration",
+    "nifi-api",
+    "nifi-properties",
+    "nifi-framework-core-api",
+    "jersey-client",
+    "mail",
+    "nifi-web-utils",
+    "nifi-utils",
+    "httpclient",
+    "mockito-core"
+  ]
+}

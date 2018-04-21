@@ -1,0 +1,11 @@
+{
+  "nifi-framework-core-api":[
+    "nifi-nar-utils",
+    "nifi-utils",
+    "nifi-runtime",
+    "nifi-client-dto",
+    "nifi-api",
+    "commons-lang3",
+    "quartz"
+  ]
+}

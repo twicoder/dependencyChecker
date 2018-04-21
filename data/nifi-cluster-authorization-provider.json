@@ -1,0 +1,9 @@
+{
+  "nifi-cluster-authorization-provider":[
+    "nifi-api",
+    "nifi-file-authorization-provider",
+    "nifi-framework-cluster-protocol",
+    "nifi-framework-cluster",
+    "nifi-socket-utils"
+  ]
+}

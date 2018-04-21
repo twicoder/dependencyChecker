@@ -1,0 +1,13 @@
+{
+  "nifi-framework-cluster-protocol":[
+    "nifi-api",
+    "nifi-properties",
+    "nifi-logging-utils",
+    "nifi-socket-utils",
+    "nifi-security",
+    "nifi-framework-core-api",
+    "spring-core",
+    "spring-beans",
+    "spring-context"
+  ]
+}

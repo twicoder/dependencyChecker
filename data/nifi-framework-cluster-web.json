@@ -1,0 +1,9 @@
+{
+  "nifi-framework-cluster-web":[
+    "nifi-api",
+    "nifi-properties",
+    "nifi-web-optimistic-locking",
+    "nifi-administration",
+    "nifi-user-actions"
+  ]
+}

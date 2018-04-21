@@ -1,0 +1,7 @@
+{
+  "nifi-runtime":[
+    "nifi-nar-utils",
+    "nifi-properties",
+    "jul-to-slf4j"
+  ]
+}

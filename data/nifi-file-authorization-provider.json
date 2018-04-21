@@ -1,0 +1,9 @@
+{
+  "nifi-file-authorization-provider":[
+    "nifi-api",
+    "nifi-utils",
+    "nifi-properties",
+    "commons-lang3",
+    "commons-codec"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "nifi-nar-utils":[
+    "nifi-properties",
+    "nifi-api"
+  ]
+}

@@ -5,6 +5,7 @@ import javax.json.JsonValue;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,16 +31,56 @@ public class Main {
             System.out.println("Target is not exits or is not a directory!");
         }
 
-        directedGraph.printInfo();
+        interactShell(directedGraph);
+    }
 
+    public static void interactShell(DirectedGraph directedGraph){
+        String userCmd = "";
+        Scanner scanner = new Scanner(System.in);
+        boolean shouldExit = false;
+        while(!shouldExit){
+            userCmd = scanner.nextLine();
+            switch(userCmd){
+                case "print":
+                    directedGraph.printInfo();
+                    break;
+                case "exit":
+                    shouldExit = true;
+                    break;
+                case "nodename":
+                    System.out.println("Please input the node name:");
+                    String nodeName = new Scanner(System.in).nextLine();
+                    directedGraph.printNodeInfo(nodeName);
+                    break;
+                case "list":
+                    directedGraph.listAllNode();
+                    break;
+                case "sole":
+                    directedGraph.listAllSoleNode();
+                    break;
+                case "delete":
+                    System.out.println("Please input the node name you want delete:");
+                    String nodeNamesToDelete = new Scanner(System.in).nextLine();
+                    String[] nodeNames = nodeNamesToDelete.split(" ");
+                    for(String oneNodeName : nodeNames){
+                        directedGraph.deleteNode(oneNodeName);
+                    }
+                    break;
+                default:
+                    System.out.println("Unknown cmd:" + userCmd);
+                    break;
+            }
+        }
     }
 
     private static ArrayList<String> getStringArrayFromString(String oneLineContent) {
         ArrayList<String> result = new ArrayList<>();
         String lineWithoutHeaderAndTail = oneLineContent.substring(1,oneLineContent.length()-1);
-        String[] parsedStringArray = lineWithoutHeaderAndTail.split(",");
-        for(String oneString : parsedStringArray){
-            result.add(oneString.substring(1,oneString.length()-1));
+        if(lineWithoutHeaderAndTail.contains(",")){
+            String[] parsedStringArray = lineWithoutHeaderAndTail.split(",");
+            for(String oneString : parsedStringArray){
+                result.add(oneString.substring(1,oneString.length()-1));
+            }
         }
         return  result;
     }

@@ -1,0 +1,26 @@
+{
+  "nifi-framework-cluster":[
+    "nifi-api",
+    "nifi-properties",
+    "nifi-logging-utils",
+    "nifi-utils",
+    "nifi-client-dto",
+    "nifi-framework-core",
+    "nifi-framework-core-api",
+    "nifi-framework-cluster-protocol",
+    "nifi-framework-cluster-web",
+    "nifi-web-utils",
+    "nifi-administration",
+    "nifi-site-to-site",
+    "commons-compress",
+    "javax.servlet-api",
+    "commons-io",
+    "commons-net",
+    "jersey-client",
+    "jersey-server",
+    "jersey-json",
+    "spring-core",
+    "spring-beans",
+    "spring-context"
+  ]
+}

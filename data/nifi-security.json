@@ -1,0 +1,7 @@
+{
+  "nifi-security":[
+    "nifi-properties",
+    "nifi-security-utils",
+    "commons-io"
+  ]
+}
